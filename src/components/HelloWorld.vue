@@ -9,7 +9,7 @@ defineProps({
 
 <template>
   <div class="greetings">
-    <h1 class="green">Sorteador Excluisivo Bianca's Gourmet</h1>
+    <h1 class="green">Sorteador Excluisivo Bianca's Gourmet </h1>
   </div>
 </template>
 
