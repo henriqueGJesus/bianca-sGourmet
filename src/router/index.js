@@ -12,7 +12,7 @@ const router = createRouter({
     {
       path: '/sorteio',
       name: 'sorteio',
-      component: () => import('../components/sorteio.Vue')
+      component: () => import('../components/sorteio.vue')
     }
   ]
 })
