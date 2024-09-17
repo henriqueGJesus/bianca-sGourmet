@@ -2,21 +2,18 @@
   
   <script setup>
   import { ref } from 'vue';
-  
+  import {useConectStore} from "../stores/conectWithApiStore.js"
   const instagramHandle = ref('');
   const postLink = ref('');
   const sorteado = ref(null);
-  
+  const conect = useConectStore();
   const sortearComentario = () => {
-    // Aqui você implementaria a lógica para buscar os comentários do post
-    // e sortear um aleatoriamente. 
-    // Por exemplo, você poderia usar uma biblioteca como axios para fazer uma requisição
-    // para a API do Instagram (se disponível) ou usar uma biblioteca de scraping.
-    // 
-    // Para fins de demonstração, vamos gerar um comentário aleatório:
     const comentarios = ['Comentário 1', 'Comentário 2', 'Comentário 3', 'Comentário 4'];
     const indiceAleatorio = Math.floor(Math.random() * comentarios.length);
     sorteado.value = comentarios[indiceAleatorio];
+    
+    conect.getComments("https://www.instagram.com/p/C-OkdeTJjsZ/");
+
   }
   </script>
   <template>
