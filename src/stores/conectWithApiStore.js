@@ -5,7 +5,7 @@ import axios from 'axios';
 export const useConectStore = defineStore('conectStore', {
   state: () => ({
     comments: [],
-    url: "https://bianca-s-gourmet-py-6p2c.vercel.app"
+    url: "http://localhost:8000"
   }),
 
   actions: {
