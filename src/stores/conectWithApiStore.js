@@ -14,7 +14,8 @@ export const useConectStore = defineStore('conectStore', {
        let teste = {
           post: postUrl
         }
-        window.location.href = this.url + '/login';
+        response = axios.get(this.url+"/handle_redirect")
+        console.log(response.data);
     }
   }
 });
